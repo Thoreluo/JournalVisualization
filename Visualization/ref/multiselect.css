@@ -1,0 +1,15 @@
+
+body,div,h1,h2,h3,h4,h5,h6,p.span,ul,li,a,img,input,span{ margin:0; padding:0;}
+ul{ list-style:none;}
+a{ text-decoration:none;}
+.clear{clear:both;}
+/*.list{ margin:30px; position:relative;}*/
+.list #case1{cursor:pointer;}
+.list #but{cursor:pointer;}
+.list .select{border:1px solid #ccc; display:none;  overflow-x:hidden; float:left; margin-top:-1px; width:auto; height:auto; position:absolute; z-index:999; background:#fff; white-space:nowrap; min-width:151px;}
+.select li{font-size:12px; height:22px; line-height:33px; clear:both;}
+.select li:last-child{border-bottom:none;}
+.select li:hover{background:#F0F8FF;}
+.select li .chk,span{float:left;}
+.select li .chk{margin:5px 0 0 13px;}
+.select li span{display:inline-block; height:9px; line-height:25px;padding-left:3px;}

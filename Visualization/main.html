@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Journal Visualization</title>
+    <link rel="icon" href="ref/journal.ico" type="image/x-icon" />
+    <!--Import echarts package-->
+    <script type="text/javascript" src="include/echarts.js"></script>
+    <script type="text/javascript" src="include/jquery.min.js"></script>
+    <script type="text/javascript" src="ref/multiselect.js"></script>
+    <link rel="stylesheet" type="text/css" href="ref/multiselect.css" />
+</head>
+
+<body style="margin-top:15px;margin-left:20px;margin-right:20px;">
+
+    <!--左半部分，包括平行坐标图和选择框-->
+    <div id="parallel_father" style="width:35%;float:left;">
+        <div class="list" id="list">
+            <input type="text"  id="case1" value="CCF方向已全选"/>
+            <input type="button" value="确定" id="but" onclick ="ensure()" />
+            <div class="select" id="select1">
+                <ul>
+                    <li><input checked type="checkbox" id="chk0" value="计算机体系结构" name="check" class="chk"/><span>计算机体系结构</span></li>
+                    <li><input checked type="checkbox" id="chk1" value="计算机网络" name="check" class="chk"/><span>计算机网络</span></li>
+                    <li><input checked type="checkbox" id="chk2" value="网络信息安全" name="check" class="chk"/><span>网络信息安全</span></li>
+                    <li><input checked type="checkbox" id="chk3" value="软件工程" name="check" class="chk"/><span>软件工程</span></li>
+                    <li><input checked type="checkbox" id="chk4" value="数据库/数据挖掘/内容检索" name="check" class="chk"/><span>数据库/数据挖掘/内容检索</span></li>
+                    <li><input checked type="checkbox" id="chk5" value="计算机科学理论" name="check" class="chk"/><span>计算机科学理论</span></li>
+                    <li><input checked type="checkbox" id="chk6" value="计算机图形学与多媒体" name="check" class="chk"/><span>计算机图形学与多媒体</span></li>
+                    <li><input checked type="checkbox" id="chk7" value="人工智能" name="check" class="chk"/><span>人工智能</span></li>
+                    <li><input checked type="checkbox" id="chk8" value="人机交互与普适计算" name="check" class="chk"/><span>人机交互与普适计算</span></li>
+                    <li><input checked type="checkbox" id="chk9" value="交叉/综合/新兴" name="check" class="chk"/><span>交叉/综合/新兴</span></li>
+                </ul>
+            </div>
+            <br/>
+            <font size="1">注：CCF D区和CSA 5区都指期刊暂未被其收录，影响因子(IF)为0指期刊暂无影响因子。</font>
+        </div>
+        <div id="parallel" style="width:100%;height:633px;float:left;"></div>
+    </div>
+    
+    <!--右半部分，包括选择框、graph图和期刊详细信息-->
+    <div id="graph_father" style="width:60%;float:right;">
+        <select id="select" onchange="selectChange()">
+            <option>-选择CCF方向-</option>
+            <option>计算机体系结构</option>
+            <option>计算机网络</option>
+            <option>网络信息安全</option>
+            <option>软件工程</option>
+            <option>数据库/数据挖掘/内容检索</option>
+            <option>计算机科学理论</option>
+            <option>计算机图形学与多媒体</option>
+            <option>人工智能</option>
+            <option>人机交互与普适计算</option>
+            <option>交叉/综合/新兴</option>
+        </select>
+        <div id="graph" style="width:100%;height:430px;"></div>
+        <div style="width:100%;height:30px;"></div>
+        <div id="details" style="width:50%;">
+            <font id="abbreviation" size="5" color="#7D7D7D">TOCS</font>
+            <br/>
+            <font id="fullname" size="3" color="#7D7D7D">ACM Transactions on Computer Systems</font>
+            <br/>
+            <!--<a id="dblp" href="http://dblp.uni-trier.de/db/journals/tocs" target="_blank">访问期刊dblp信息</a>
+            <br/>-->
+            <div style="height:10px;"></div>
+            <img id="press" src="ref/logos/acm logo.png" style="max-height:50px;max-width:50%;" title="出版社：ACM"/>
+            <a id="dblp" href="http://dblp.uni-trier.de/db/journals/tocs" target="_blank"><img id="dblp_logo" src="ref/logos/dblp.png" height="50ppx" title="dblp网址"/></a>
+        </div>
+    </div>
+
+    <!--绘图的主要代码-->
+    <script type="text/javascript" src="ref/main.js"></script>
+
+</body>
+</html>
