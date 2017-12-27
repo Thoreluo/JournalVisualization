@@ -832,7 +832,7 @@ var graph_CN = {
             "id": "TON",
             "name": "TON",
             "fullName": "IEEE/ACM Transactions on Networking",
-            "Press": "IEEE, ACM",
+            "Press": "IEEE",
             "DBLP": "http://dblp.uni-trier.de/db/journals/ton/",
             "CCF": "A",
             "CSA": 3,
@@ -2417,7 +2417,7 @@ var graph_DB = {
             "id": "IJKM",
             "name": "IJKM",
             "fullName": "International Journal of Knowledge Management",
-            "Press": "IGI",
+            "Press": "IGI-Global",
             "DBLP": "http://dblp.uni-trier.de/db/journals/ijkm/",
             "CCF": "C",
             "CSA": 5,
@@ -2430,7 +2430,7 @@ var graph_DB = {
             "id": "IJSWIS",
             "name": "IJSWIS",
             "fullName": "International Journal on Semantic Web and Information Systems",
-            "Press": "IGI",
+            "Press": "IGI-Global",
             "DBLP": "http://dblp.uni-trier.de/db/journals/ijswis/",
             "CCF": "C",
             "CSA": 4,
@@ -3070,7 +3070,7 @@ var graph_CST = {
             "id": "LOGCOM",
             "name": "LOGCOM",
             "fullName": "Journal of Logic and Computation",
-            "Press": "Oxford University",
+            "Press": "Oxford University Press",
             "DBLP": "http://dblp.uni-trier.de/db/journals/logcom/",
             "CCF": "C",
             "CSA": 4,
@@ -4382,7 +4382,7 @@ var graph_AI = {
             "id": "ES",
             "name": "ES",
             "fullName": "Expert Systems",
-            "Press": "Blackwell /Wiley",
+            "Press": "Blackwell",
             "DBLP": "http://dblp.uni-trier.de/db/journals/es/",
             "CCF": "C",
             "CSA": 4,
@@ -4629,7 +4629,7 @@ var graph_AI = {
             "id": "NLE",
             "name": "NLE",
             "fullName": "Natural Language Engineering",
-            "Press": "Cambridge University",
+            "Press": "Cambridge University Press",
             "DBLP": "http://dblp.uni-trier.de/db/journals/nle/",
             "CCF": "C",
             "CSA": 4,
@@ -5609,7 +5609,7 @@ var graph_Others = {
             "id": "JCST",
             "name": "JCST",
             "fullName": "Journal of Computer Science and Technology",
-            "Press": "Spinger",
+            "Press": "Springer",
             "DBLP": "http://dblp.uni-trier.de/db/journals/jcst/",
             "CCF": "B",
             "CSA": 4,
@@ -5726,7 +5726,7 @@ var graph_Others = {
             "id": "TCBB",
             "name": "TCBB",
             "fullName": "IEEE-ACM Transactions on Computational Biology and Bioinformatics",
-            "Press": "IEEE/ACM",
+            "Press": "IEEE",
             "DBLP": "http://dblp.uni-trier.de/db/journals/tcbb/",
             "CCF": "C",
             "CSA": 3,
@@ -6131,4 +6131,6 @@ myGraph.on('contextmenu', function (params) {
     var press = document.getElementById("press");
     var dblp = document.getElementById("dblp");
     abbreviation.innerHTML = details.name;
+    fullname = details.fullName;
+    
 });
