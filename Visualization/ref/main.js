@@ -297,7 +297,7 @@ var graph_CA = {
             "id": "TOCS",
             "name": "TOCS",
             "fullName": "ACM Transactions on Computer Systems",
-            "Press": "ACM",
+            "Press": "ACM1",
             "DBLP": "http://dblp.uni-trier.de/db/journals/tocs/",
             "CCF": "A",
             "CSA": 4,
@@ -6131,6 +6131,15 @@ myGraph.on('contextmenu', function (params) {
     var press = document.getElementById("press");
     var dblp = document.getElementById("dblp");
     abbreviation.innerHTML = details.name;
-    fullname = details.fullName;
-    
+    fullname.innerHTML = details.fullName;
+    dblp.href = details.DBLP;
+    press.title = '出版社：' + details.Press;
+    press.src = 'ref/logos/' + details.Press + '.png';
 });
+
+function NoImage()
+{
+    var press = document.getElementById("press");
+    press.title += '，但我们无法找到该出版社logo';
+    press.src = 'ref/logos/404.png';
+}
