@@ -5983,6 +5983,7 @@ option_graph = {
     /*legend: {
         data:['计算机体系结构','计算机网络']
     },*/
+    animationEasingUpdate: 'quinticInOut',
     legend: {
         show: true,
         //type: 'scroll',
@@ -5998,10 +5999,11 @@ option_graph = {
     },
     /*color: ['rgb(3,54,73)', 'rgb(128,143,128)', 'rgb(93,172,129)', 'rgb(168,216,185)', 'rgb(145,180,147)',
         'rgb(225,159,180)', 'rgb(225,107,140)', 'rgb(202,173,95)', 'rgb(191,103,102)', 'rgb(134,71,63)'],*/
-    color: ['rgb(3,54,73)', 'rgb(168,216,185)', 'rgb(93,172,129)', 'rgb(145,180,147)', 'rgb(128,143,128)',
+    color: ['rgb(148, 161, 169)', 'rgb(168,216,185)', 'rgb(181,202,160)', 'rgb(134,193,102)', 'rgb(93,172,129)',
         'rgb(100,54,60)', 'rgb(134,71,63)', 'rgb(191,103,102)', 'rgb(225,107,140)', 'rgb(225,159,180)'],
     series: [
         {
+            left: 75,
             name: '',
             type: 'graph',
             layout: 'circular',
@@ -6015,7 +6017,7 @@ option_graph = {
                 normal: {
                     color: 'target',
                     curveness: 0.3,
-                    width: 1.5
+                    width: 1
                 }
             },
             label: {
@@ -6100,7 +6102,13 @@ function selectChange() {
     if (new_links == null || new_nodes == null) {/*什么都不做*/ }
     else {
         new_nodes.forEach(function (node) {
-            node.symbolSize = node.IF_2015 * 10 + 5;
+            node.symbolSize = node.IF_2015 * 8 + 5;
+            //node.symbolSize = 5 * Math.pow(2, node.IF_2015);
+            /*node.label = {
+                normal: {
+                    show: node.symbolSize > 6
+                }
+            };*/
             nodes.push(node);
         });
         new_links.forEach(function (link) {

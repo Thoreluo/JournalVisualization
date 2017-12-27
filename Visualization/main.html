@@ -13,10 +13,10 @@
     <link rel="stylesheet" type="text/css" href="ref/multiselect.css" />
 </head>
 
-<body style="margin-top:15px;margin-left:20px;margin-right:20px;">
+<body style="margin-top:10px;margin-left:50px;margin-right:50px;">
 
     <!--左半部分，包括平行坐标图和选择框-->
-    <div id="parallel_father" style="width:35%;float:left;">
+    <div id="parallel_father" style="width:40%;height:610px;float:left;">
         <div class="list" id="list">
             <input type="text"  id="case1" value="CCF方向已全选"/>
             <input type="button" value="确定" id="but" onclick ="ensure()" />
@@ -37,11 +37,11 @@
             <br/>
             <font size="1">注：CCF D区和CSA 5区都指期刊暂未被其收录，影响因子(IF)为0指期刊暂无影响因子。</font>
         </div>
-        <div id="parallel" style="width:100%;height:633px;float:left;"></div>
+        <div id="parallel" style="width:100%;height:650px;float:left;"></div>
     </div>
     
     <!--右半部分，包括选择框、graph图和期刊详细信息-->
-    <div id="graph_father" style="width:60%;float:right;">
+    <div id="graph_father" style="width:55%;height:610px;float:right;">
         <select id="select" onchange="selectChange()">
             <option>-选择CCF方向-</option>
             <option>计算机体系结构</option>
@@ -57,7 +57,7 @@
         </select>
         <div id="graph" style="width:100%;height:430px;"></div>
         <div style="width:100%;height:30px;"></div>
-        <div id="details" style="width:50%;">
+        <div id="details" style="width:40%;">
             <font id="abbreviation" size="5" color="#7D7D7D">TOCS</font>
             <br/>
             <font id="fullname" size="3" color="#7D7D7D">ACM Transactions on Computer Systems</font>
