@@ -1,0 +1,90 @@
+[
+    {
+        "source": "TOCHI",
+        "target": "CCFA"
+    },
+    {
+        "source": "IJHCS",
+        "target": "CCFA"
+    },
+    {
+        "source": "CSCW",
+        "target": "CCFB"
+    },
+    {
+        "source": "HCI",
+        "target": "CCFB"
+    },
+    {
+        "source": "IWC",
+        "target": "CCFB"
+    },
+    {
+        "source": "UMUAI",
+        "target": "CCFB"
+    },
+    {
+        "source": "IJHCI",
+        "target": "CCFB"
+    },
+    {
+        "source": "THMS",
+        "target": "CCFB"
+    },
+    {
+        "source": "BIT",
+        "target": "CCFC"
+    },
+    {
+        "source": "PMC",
+        "target": "CCFC"
+    },
+    {
+        "source": "PUC",
+        "target": "CCFC"
+    },
+    {
+        "source": "TOCHI",
+        "target": "CSA4"
+    },
+    {
+        "source": "IJHCS",
+        "target": "CSA3"
+    },
+    {
+        "source": "CSCW",
+        "target": "CSA3"
+    },
+    {
+        "source": "HCI",
+        "target": "CSA2"
+    },
+    {
+        "source": "IWC",
+        "target": "CSA4"
+    },
+    {
+        "source": "UMUAI",
+        "target": "CSA2"
+    },
+    {
+        "source": "IJHCI",
+        "target": "CSA4"
+    },
+    {
+        "source": "THMS",
+        "target": "CSA3"
+    },
+    {
+        "source": "BIT",
+        "target": "CSA4"
+    },
+    {
+        "source": "PMC",
+        "target": "CSA3"
+    },
+    {
+        "source": "PUC",
+        "target": "CSA3"
+    }
+]

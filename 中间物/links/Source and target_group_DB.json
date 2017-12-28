@@ -1,0 +1,258 @@
+[
+    {
+        "source": "TODS",
+        "target": "CCFA"
+    },
+    {
+        "source": "TOIS",
+        "target": "CCFA"
+    },
+    {
+        "source": "TKDE",
+        "target": "CCFA"
+    },
+    {
+        "source": "VLDBJ",
+        "target": "CCFA"
+    },
+    {
+        "source": "TKDD",
+        "target": "CCFB"
+    },
+    {
+        "source": "AEI",
+        "target": "CCFB"
+    },
+    {
+        "source": "DKE2",
+        "target": "CCFB"
+    },
+    {
+        "source": "DMKD",
+        "target": "CCFB"
+    },
+    {
+        "source": "EJIS1",
+        "target": "CCFB"
+    },
+    {
+        "source": "GeoInfo",
+        "target": "CCFB"
+    },
+    {
+        "source": "IPM",
+        "target": "CCFB"
+    },
+    {
+        "source": "InSci",
+        "target": "CCFB"
+    },
+    {
+        "source": "InSys",
+        "target": "CCFB"
+    },
+    {
+        "source": "JASIST",
+        "target": "CCFB"
+    },
+    {
+        "source": "JWS",
+        "target": "CCFB"
+    },
+    {
+        "source": "KIS",
+        "target": "CCFB"
+    },
+    {
+        "source": "TWEB",
+        "target": "CCFB"
+    },
+    {
+        "source": "SW",
+        "target": "CCFD"
+    },
+    {
+        "source": "DPD",
+        "target": "CCFC"
+    },
+    {
+        "source": "I&M",
+        "target": "CCFC"
+    },
+    {
+        "source": "IPL3",
+        "target": "CCFC"
+    },
+    {
+        "source": "IR",
+        "target": "CCFC"
+    },
+    {
+        "source": "IJCIS",
+        "target": "CCFC"
+    },
+    {
+        "source": "IJGIS",
+        "target": "CCFC"
+    },
+    {
+        "source": "IJIS4",
+        "target": "CCFC"
+    },
+    {
+        "source": "IJKM",
+        "target": "CCFC"
+    },
+    {
+        "source": "IJSWIS",
+        "target": "CCFC"
+    },
+    {
+        "source": "JCIS",
+        "target": "CCFC"
+    },
+    {
+        "source": "JDM",
+        "target": "CCFC"
+    },
+    {
+        "source": "JGITM",
+        "target": "CCFC"
+    },
+    {
+        "source": "JIIS",
+        "target": "CCFC"
+    },
+    {
+        "source": "JSIS",
+        "target": "CCFC"
+    },
+    {
+        "source": "TODS",
+        "target": "CSA4"
+    },
+    {
+        "source": "TOIS",
+        "target": "CSA4"
+    },
+    {
+        "source": "TKDE",
+        "target": "CSA3"
+    },
+    {
+        "source": "VLDBJ",
+        "target": "CSA3"
+    },
+    {
+        "source": "TKDD",
+        "target": "CSA4"
+    },
+    {
+        "source": "AEI",
+        "target": "CSA3"
+    },
+    {
+        "source": "DKE2",
+        "target": "CSA3"
+    },
+    {
+        "source": "DMKD",
+        "target": "CSA2"
+    },
+    {
+        "source": "EJIS1",
+        "target": "CSA2"
+    },
+    {
+        "source": "GeoInfo",
+        "target": "CSA4"
+    },
+    {
+        "source": "IPM",
+        "target": "CSA4"
+    },
+    {
+        "source": "InSci",
+        "target": "CSA2"
+    },
+    {
+        "source": "InSys",
+        "target": "CSA3"
+    },
+    {
+        "source": "JASIST",
+        "target": "CSA3"
+    },
+    {
+        "source": "JWS",
+        "target": "CSA3"
+    },
+    {
+        "source": "KIS",
+        "target": "CSA3"
+    },
+    {
+        "source": "TWEB",
+        "target": "CSA3"
+    },
+    {
+        "source": "SW",
+        "target": "CSA3"
+    },
+    {
+        "source": "DPD",
+        "target": "CSA4"
+    },
+    {
+        "source": "I&M",
+        "target": "CSA3"
+    },
+    {
+        "source": "IPL3",
+        "target": "CSA4"
+    },
+    {
+        "source": "IR",
+        "target": "CSA4"
+    },
+    {
+        "source": "IJCIS",
+        "target": "CSA4"
+    },
+    {
+        "source": "IJGIS",
+        "target": "CSA3"
+    },
+    {
+        "source": "IJIS4",
+        "target": "CSA3"
+    },
+    {
+        "source": "IJKM",
+        "target": "CSA5"
+    },
+    {
+        "source": "IJSWIS",
+        "target": "CSA4"
+    },
+    {
+        "source": "JCIS",
+        "target": "CSA4"
+    },
+    {
+        "source": "JDM",
+        "target": "CSA4"
+    },
+    {
+        "source": "JGITM",
+        "target": "CSA5"
+    },
+    {
+        "source": "JIIS",
+        "target": "CSA4"
+    },
+    {
+        "source": "JSIS",
+        "target": "CSA2"
+    }
+]

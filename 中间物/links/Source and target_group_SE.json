@@ -1,0 +1,194 @@
+[
+    {
+        "source": "TOPLAS",
+        "target": "CCFA"
+    },
+    {
+        "source": "TOSEM",
+        "target": "CCFA"
+    },
+    {
+        "source": "TSE",
+        "target": "CCFA"
+    },
+    {
+        "source": "ASE",
+        "target": "CCFB"
+    },
+    {
+        "source": "ESE",
+        "target": "CCFB"
+    },
+    {
+        "source": "TSC",
+        "target": "CCFB"
+    },
+    {
+        "source": "IETS",
+        "target": "CCFB"
+    },
+    {
+        "source": "IST",
+        "target": "CCFB"
+    },
+    {
+        "source": "JFP",
+        "target": "CCFB"
+    },
+    {
+        "source": "JSEP",
+        "target": "CCFB"
+    },
+    {
+        "source": "JSS",
+        "target": "CCFB"
+    },
+    {
+        "source": "RE",
+        "target": "CCFB"
+    },
+    {
+        "source": "SCP",
+        "target": "CCFB"
+    },
+    {
+        "source": "SoSyM",
+        "target": "CCFB"
+    },
+    {
+        "source": "SPE",
+        "target": "CCFB"
+    },
+    {
+        "source": "STVR",
+        "target": "CCFB"
+    },
+    {
+        "source": "CL4",
+        "target": "CCFC"
+    },
+    {
+        "source": "IJSEKE",
+        "target": "CCFC"
+    },
+    {
+        "source": "STTT",
+        "target": "CCFC"
+    },
+    {
+        "source": "JLAP",
+        "target": "CCFC"
+    },
+    {
+        "source": "JWE",
+        "target": "CCFC"
+    },
+    {
+        "source": "SOCA",
+        "target": "CCFC"
+    },
+    {
+        "source": "SQJ",
+        "target": "CCFC"
+    },
+    {
+        "source": "TPLP",
+        "target": "CCFC"
+    },
+    {
+        "source": "TOPLAS",
+        "target": "CSA4"
+    },
+    {
+        "source": "TOSEM",
+        "target": "CSA3"
+    },
+    {
+        "source": "TSE",
+        "target": "CSA3"
+    },
+    {
+        "source": "ASE",
+        "target": "CSA3"
+    },
+    {
+        "source": "ESE",
+        "target": "CSA3"
+    },
+    {
+        "source": "TSC",
+        "target": "CSA2"
+    },
+    {
+        "source": "IETS",
+        "target": "CSA4"
+    },
+    {
+        "source": "IST",
+        "target": "CSA3"
+    },
+    {
+        "source": "JFP",
+        "target": "CSA4"
+    },
+    {
+        "source": "JSEP",
+        "target": "CSA4"
+    },
+    {
+        "source": "JSS",
+        "target": "CSA3"
+    },
+    {
+        "source": "RE",
+        "target": "CSA4"
+    },
+    {
+        "source": "SCP",
+        "target": "CSA4"
+    },
+    {
+        "source": "SoSyM",
+        "target": "CSA4"
+    },
+    {
+        "source": "SPE",
+        "target": "CSA4"
+    },
+    {
+        "source": "STVR",
+        "target": "CSA4"
+    },
+    {
+        "source": "CL4",
+        "target": "CSA4"
+    },
+    {
+        "source": "IJSEKE",
+        "target": "CSA4"
+    },
+    {
+        "source": "STTT",
+        "target": "CSA5"
+    },
+    {
+        "source": "JLAP",
+        "target": "CSA5"
+    },
+    {
+        "source": "JWE",
+        "target": "CSA4"
+    },
+    {
+        "source": "SOCA",
+        "target": "CSA5"
+    },
+    {
+        "source": "SQJ",
+        "target": "CSA4"
+    },
+    {
+        "source": "TPLP",
+        "target": "CSA4"
+    }
+]

@@ -1,0 +1,194 @@
+[
+    {
+        "source": "Proc. IEEE",
+        "target": "CCFA"
+    },
+    {
+        "source": "JACM",
+        "target": "CCFA"
+    },
+    {
+        "source": "BioInfo",
+        "target": "CCFB"
+    },
+    {
+        "source": "BB",
+        "target": "CCFB"
+    },
+    {
+        "source": "Cognition",
+        "target": "CCFB"
+    },
+    {
+        "source": "PLOSCB",
+        "target": "CCFB"
+    },
+    {
+        "source": "TMI",
+        "target": "CCFB"
+    },
+    {
+        "source": "TGARS",
+        "target": "CCFB"
+    },
+    {
+        "source": "TITS",
+        "target": "CCFB"
+    },
+    {
+        "source": "TR",
+        "target": "CCFB"
+    },
+    {
+        "source": "TASAE",
+        "target": "CCFB"
+    },
+    {
+        "source": "JCST",
+        "target": "CCFB"
+    },
+    {
+        "source": "JAMIA",
+        "target": "CCFB"
+    },
+    {
+        "source": "SCIS",
+        "target": "CCFB"
+    },
+    {
+        "source": "CompJ",
+        "target": "CCFB"
+    },
+    {
+        "source": "WWW",
+        "target": "CCFB"
+    },
+    {
+        "source": "BMCBio",
+        "target": "CCFC"
+    },
+    {
+        "source": "CyberS",
+        "target": "CCFC"
+    },
+    {
+        "source": "GRSL",
+        "target": "CCFC"
+    },
+    {
+        "source": "TITB",
+        "target": "CCFC"
+    },
+    {
+        "source": "TCBB",
+        "target": "CCFC"
+    },
+    {
+        "source": "IETITS",
+        "target": "CCFC"
+    },
+    {
+        "source": "MIA",
+        "target": "CCFC"
+    },
+    {
+        "source": "FCS",
+        "target": "CCFC"
+    },
+    {
+        "source": "Proc. IEEE",
+        "target": "CSA1"
+    },
+    {
+        "source": "JACM",
+        "target": "CSA3"
+    },
+    {
+        "source": "BioInfo",
+        "target": "CSA2"
+    },
+    {
+        "source": "BB",
+        "target": "CSA1"
+    },
+    {
+        "source": "Cognition",
+        "target": "CSA5"
+    },
+    {
+        "source": "PLOSCB",
+        "target": "CSA2"
+    },
+    {
+        "source": "TMI",
+        "target": "CSA2"
+    },
+    {
+        "source": "TGARS",
+        "target": "CSA2"
+    },
+    {
+        "source": "TITS",
+        "target": "CSA2"
+    },
+    {
+        "source": "TR",
+        "target": "CSA2"
+    },
+    {
+        "source": "TASAE",
+        "target": "CSA2"
+    },
+    {
+        "source": "JCST",
+        "target": "CSA4"
+    },
+    {
+        "source": "JAMIA",
+        "target": "CSA2"
+    },
+    {
+        "source": "SCIS",
+        "target": "CSA4"
+    },
+    {
+        "source": "CompJ",
+        "target": "CSA4"
+    },
+    {
+        "source": "WWW",
+        "target": "CSA3"
+    },
+    {
+        "source": "BMCBio",
+        "target": "CSA3"
+    },
+    {
+        "source": "CyberS",
+        "target": "CSA4"
+    },
+    {
+        "source": "GRSL",
+        "target": "CSA3"
+    },
+    {
+        "source": "TITB",
+        "target": "CSA5"
+    },
+    {
+        "source": "TCBB",
+        "target": "CSA3"
+    },
+    {
+        "source": "IETITS",
+        "target": "CSA4"
+    },
+    {
+        "source": "MIA",
+        "target": "CSA2"
+    },
+    {
+        "source": "FCS",
+        "target": "CSA4"
+    }
+]

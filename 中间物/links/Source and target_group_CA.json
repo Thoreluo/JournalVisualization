@@ -1,0 +1,202 @@
+[
+    {
+        "source": "TOCS",
+        "target": "CCFA"
+    },
+    {
+        "source": "TOC",
+        "target": "CCFA"
+    },
+    {
+        "source": "TPDS",
+        "target": "CCFA"
+    },
+    {
+        "source": "TCAD",
+        "target": "CCFA"
+    },
+    {
+        "source": "TOS",
+        "target": "CCFA"
+    },
+    {
+        "source": "TACO",
+        "target": "CCFB"
+    },
+    {
+        "source": "TAAS",
+        "target": "CCFB"
+    },
+    {
+        "source": "TODAES",
+        "target": "CCFB"
+    },
+    {
+        "source": "TECS",
+        "target": "CCFB"
+    },
+    {
+        "source": "TRETS",
+        "target": "CCFB"
+    },
+    {
+        "source": "TVLSI",
+        "target": "CCFB"
+    },
+    {
+        "source": "JPDC",
+        "target": "CCFB"
+    },
+    {
+        "source": "PARCO",
+        "target": "CCFB"
+    },
+    {
+        "source": "IJPE",
+        "target": "CCFB"
+    },
+    {
+        "source": "JSA",
+        "target": "CCFB"
+    },
+    {
+        "source": "CCPE",
+        "target": "CCFC"
+    },
+    {
+        "source": "DC",
+        "target": "CCFC"
+    },
+    {
+        "source": "FGCS",
+        "target": "CCFC"
+    },
+    {
+        "source": "Integration",
+        "target": "CCFC"
+    },
+    {
+        "source": "MMEHD",
+        "target": "CCFC"
+    },
+    {
+        "source": "JGC",
+        "target": "CCFC"
+    },
+    {
+        "source": "TJSC",
+        "target": "CCFC"
+    },
+    {
+        "source": "JETC",
+        "target": "CCFC"
+    },
+    {
+        "source": "JET",
+        "target": "CCFC"
+    },
+    {
+        "source": "RTS",
+        "target": "CCFC"
+    },
+    {
+        "source": "TOCS",
+        "target": "CSA4"
+    },
+    {
+        "source": "TOC",
+        "target": "CSA3"
+    },
+    {
+        "source": "TPDS",
+        "target": "CSA2"
+    },
+    {
+        "source": "TCAD",
+        "target": "CSA4"
+    },
+    {
+        "source": "TOS",
+        "target": "CSA4"
+    },
+    {
+        "source": "TACO",
+        "target": "CSA4"
+    },
+    {
+        "source": "TAAS",
+        "target": "CSA4"
+    },
+    {
+        "source": "TODAES",
+        "target": "CSA4"
+    },
+    {
+        "source": "TECS",
+        "target": "CSA4"
+    },
+    {
+        "source": "TRETS",
+        "target": "CSA4"
+    },
+    {
+        "source": "TVLSI",
+        "target": "CSA4"
+    },
+    {
+        "source": "JPDC",
+        "target": "CSA4"
+    },
+    {
+        "source": "PARCO",
+        "target": "CSA3"
+    },
+    {
+        "source": "IJPE",
+        "target": "CSA4"
+    },
+    {
+        "source": "JSA",
+        "target": "CSA4"
+    },
+    {
+        "source": "CCPE",
+        "target": "CSA4"
+    },
+    {
+        "source": "DC",
+        "target": "CSA4"
+    },
+    {
+        "source": "FGCS",
+        "target": "CSA2"
+    },
+    {
+        "source": "Integration",
+        "target": "CSA4"
+    },
+    {
+        "source": "MMEHD",
+        "target": "CSA4"
+    },
+    {
+        "source": "JGC",
+        "target": "CSA3"
+    },
+    {
+        "source": "TJSC",
+        "target": "CSA4"
+    },
+    {
+        "source": "JETC",
+        "target": "CSA4"
+    },
+    {
+        "source": "JET",
+        "target": "CSA4"
+    },
+    {
+        "source": "RTS",
+        "target": "CSA4"
+    }
+]

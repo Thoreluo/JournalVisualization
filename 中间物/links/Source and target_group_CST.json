@@ -1,0 +1,226 @@
+[
+    {
+        "source": "IANDC",
+        "target": "CCFA"
+    },
+    {
+        "source": "SICOMP",
+        "target": "CCFA"
+    },
+    {
+        "source": "TIT",
+        "target": "CCFA"
+    },
+    {
+        "source": "TALG",
+        "target": "CCFB"
+    },
+    {
+        "source": "TOCL",
+        "target": "CCFB"
+    },
+    {
+        "source": "TOMS",
+        "target": "CCFB"
+    },
+    {
+        "source": "Algorithmica",
+        "target": "CCFB"
+    },
+    {
+        "source": "CC1",
+        "target": "CCFB"
+    },
+    {
+        "source": "FAC",
+        "target": "CCFB"
+    },
+    {
+        "source": "FMSD",
+        "target": "CCFB"
+    },
+    {
+        "source": "INFORMS",
+        "target": "CCFB"
+    },
+    {
+        "source": "JCSS",
+        "target": "CCFB"
+    },
+    {
+        "source": "JGO",
+        "target": "CCFB"
+    },
+    {
+        "source": "JSC",
+        "target": "CCFB"
+    },
+    {
+        "source": "MSCS",
+        "target": "CCFB"
+    },
+    {
+        "source": "TCS2",
+        "target": "CCFB"
+    },
+    {
+        "source": "APAL",
+        "target": "CCFC"
+    },
+    {
+        "source": "ACTA",
+        "target": "CCFC"
+    },
+    {
+        "source": "DAM",
+        "target": "CCFC"
+    },
+    {
+        "source": "FUIN",
+        "target": "CCFC"
+    },
+    {
+        "source": "LISP",
+        "target": "CCFC"
+    },
+    {
+        "source": "IPL",
+        "target": "CCFC"
+    },
+    {
+        "source": "JCOMPLEXITY",
+        "target": "CCFC"
+    },
+    {
+        "source": "LOGCOM",
+        "target": "CCFC"
+    },
+    {
+        "source": "JSL",
+        "target": "CCFC"
+    },
+    {
+        "source": "LMCS",
+        "target": "CCFC"
+    },
+    {
+        "source": "SIDMA",
+        "target": "CCFC"
+    },
+    {
+        "source": "TCS",
+        "target": "CCFC"
+    },
+    {
+        "source": "IANDC",
+        "target": "CSA4"
+    },
+    {
+        "source": "SICOMP",
+        "target": "CSA4"
+    },
+    {
+        "source": "TIT",
+        "target": "CSA2"
+    },
+    {
+        "source": "TALG",
+        "target": "CSA4"
+    },
+    {
+        "source": "TOCL",
+        "target": "CSA4"
+    },
+    {
+        "source": "TOMS",
+        "target": "CSA2"
+    },
+    {
+        "source": "Algorithmica",
+        "target": "CSA4"
+    },
+    {
+        "source": "CC1",
+        "target": "CSA4"
+    },
+    {
+        "source": "FAC",
+        "target": "CSA4"
+    },
+    {
+        "source": "FMSD",
+        "target": "CSA4"
+    },
+    {
+        "source": "INFORMS",
+        "target": "CSA4"
+    },
+    {
+        "source": "JCSS",
+        "target": "CSA4"
+    },
+    {
+        "source": "JGO",
+        "target": "CSA2"
+    },
+    {
+        "source": "JSC",
+        "target": "CSA4"
+    },
+    {
+        "source": "MSCS",
+        "target": "CSA4"
+    },
+    {
+        "source": "TCS2",
+        "target": "CSA4"
+    },
+    {
+        "source": "APAL",
+        "target": "CSA4"
+    },
+    {
+        "source": "ACTA",
+        "target": "CSA4"
+    },
+    {
+        "source": "DAM",
+        "target": "CSA4"
+    },
+    {
+        "source": "FUIN",
+        "target": "CSA4"
+    },
+    {
+        "source": "LISP",
+        "target": "CSA5"
+    },
+    {
+        "source": "IPL",
+        "target": "CSA4"
+    },
+    {
+        "source": "JCOMPLEXITY",
+        "target": "CSA3"
+    },
+    {
+        "source": "LOGCOM",
+        "target": "CSA4"
+    },
+    {
+        "source": "JSL",
+        "target": "CSA4"
+    },
+    {
+        "source": "LMCS",
+        "target": "CSA4"
+    },
+    {
+        "source": "SIDMA",
+        "target": "CSA4"
+    },
+    {
+        "source": "TCS",
+        "target": "CSA4"
+    }
+]

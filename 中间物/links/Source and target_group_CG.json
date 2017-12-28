@@ -1,0 +1,218 @@
+[
+    {
+        "source": "TOG",
+        "target": "CCFA"
+    },
+    {
+        "source": "TIP",
+        "target": "CCFA"
+    },
+    {
+        "source": "TVCG",
+        "target": "CCFA"
+    },
+    {
+        "source": "TOMCCAP1",
+        "target": "CCFB"
+    },
+    {
+        "source": "CAD",
+        "target": "CCFB"
+    },
+    {
+        "source": "CAGD",
+        "target": "CCFB"
+    },
+    {
+        "source": "CGF",
+        "target": "CCFB"
+    },
+    {
+        "source": "GM",
+        "target": "CCFB"
+    },
+    {
+        "source": "TCSVT",
+        "target": "CCFB"
+    },
+    {
+        "source": "TMM",
+        "target": "CCFB"
+    },
+    {
+        "source": "JASA",
+        "target": "CCFB"
+    },
+    {
+        "source": "SIIMS",
+        "target": "CCFB"
+    },
+    {
+        "source": "Speech Com",
+        "target": "CCFB"
+    },
+    {
+        "source": "CAVW",
+        "target": "CCFC"
+    },
+    {
+        "source": "C&G",
+        "target": "CCFC"
+    },
+    {
+        "source": "CGTA",
+        "target": "CCFC"
+    },
+    {
+        "source": "DCG",
+        "target": "CCFC"
+    },
+    {
+        "source": "IET-IPR",
+        "target": "CCFC"
+    },
+    {
+        "source": "ISPL",
+        "target": "CCFC"
+    },
+    {
+        "source": "JVCIR",
+        "target": "CCFC"
+    },
+    {
+        "source": "MS",
+        "target": "CCFC"
+    },
+    {
+        "source": "MTA",
+        "target": "CCFC"
+    },
+    {
+        "source": "SP",
+        "target": "CCFC"
+    },
+    {
+        "source": "SPIC",
+        "target": "CCFC"
+    },
+    {
+        "source": "TVC",
+        "target": "CCFC"
+    },
+    {
+        "source": "JoVis",
+        "target": "CCFD"
+    },
+    {
+        "source": "InfoVis",
+        "target": "CCFD"
+    },
+    {
+        "source": "TOG",
+        "target": "CSA1"
+    },
+    {
+        "source": "TIP",
+        "target": "CSA2"
+    },
+    {
+        "source": "TVCG",
+        "target": "CSA3"
+    },
+    {
+        "source": "TOMCCAP1",
+        "target": "CSA4"
+    },
+    {
+        "source": "CAD",
+        "target": "CSA3"
+    },
+    {
+        "source": "CAGD",
+        "target": "CSA4"
+    },
+    {
+        "source": "CGF",
+        "target": "CSA3"
+    },
+    {
+        "source": "GM",
+        "target": "CSA4"
+    },
+    {
+        "source": "TCSVT",
+        "target": "CSA2"
+    },
+    {
+        "source": "TMM",
+        "target": "CSA2"
+    },
+    {
+        "source": "JASA",
+        "target": "CSA3"
+    },
+    {
+        "source": "SIIMS",
+        "target": "CSA2"
+    },
+    {
+        "source": "Speech Com",
+        "target": "CSA3"
+    },
+    {
+        "source": "CAVW",
+        "target": "CSA4"
+    },
+    {
+        "source": "C&G",
+        "target": "CSA4"
+    },
+    {
+        "source": "CGTA",
+        "target": "CSA4"
+    },
+    {
+        "source": "DCG",
+        "target": "CSA3"
+    },
+    {
+        "source": "IET-IPR",
+        "target": "CSA4"
+    },
+    {
+        "source": "ISPL",
+        "target": "CSA3"
+    },
+    {
+        "source": "JVCIR",
+        "target": "CSA3"
+    },
+    {
+        "source": "MS",
+        "target": "CSA4"
+    },
+    {
+        "source": "MTA",
+        "target": "CSA4"
+    },
+    {
+        "source": "SP",
+        "target": "CSA2"
+    },
+    {
+        "source": "SPIC",
+        "target": "CSA3"
+    },
+    {
+        "source": "TVC",
+        "target": "CSA4"
+    },
+    {
+        "source": "JoVis",
+        "target": "CSA4"
+    },
+    {
+        "source": "InfoVis",
+        "target": "CSA4"
+    }
+]

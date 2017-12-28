@@ -1,0 +1,154 @@
+[
+    {
+        "source": "TON",
+        "target": "CCFA"
+    },
+    {
+        "source": "JSAC",
+        "target": "CCFA"
+    },
+    {
+        "source": "TMC",
+        "target": "CCFA"
+    },
+    {
+        "source": "TOIT",
+        "target": "CCFB"
+    },
+    {
+        "source": "TOMCCAP",
+        "target": "CCFB"
+    },
+    {
+        "source": "TOSN",
+        "target": "CCFB"
+    },
+    {
+        "source": "CN",
+        "target": "CCFB"
+    },
+    {
+        "source": "TOC1",
+        "target": "CCFB"
+    },
+    {
+        "source": "TWC",
+        "target": "CCFB"
+    },
+    {
+        "source": "AdHoc",
+        "target": "CCFC"
+    },
+    {
+        "source": "CC",
+        "target": "CCFC"
+    },
+    {
+        "source": "TNSM",
+        "target": "CCFC"
+    },
+    {
+        "source": "IETCOM",
+        "target": "CCFC"
+    },
+    {
+        "source": "JNCA",
+        "target": "CCFC"
+    },
+    {
+        "source": "MONET",
+        "target": "CCFC"
+    },
+    {
+        "source": "Net",
+        "target": "CCFC"
+    },
+    {
+        "source": "PPNA",
+        "target": "CCFC"
+    },
+    {
+        "source": "WCMC",
+        "target": "CCFC"
+    },
+    {
+        "source": "WN",
+        "target": "CCFC"
+    },
+    {
+        "source": "TON",
+        "target": "CSA3"
+    },
+    {
+        "source": "JSAC",
+        "target": "CSA2"
+    },
+    {
+        "source": "TMC",
+        "target": "CSA2"
+    },
+    {
+        "source": "TOIT",
+        "target": "CSA4"
+    },
+    {
+        "source": "TOMCCAP",
+        "target": "CSA4"
+    },
+    {
+        "source": "TOSN",
+        "target": "CSA3"
+    },
+    {
+        "source": "CN",
+        "target": "CSA3"
+    },
+    {
+        "source": "TOC1",
+        "target": "CSA3"
+    },
+    {
+        "source": "TWC",
+        "target": "CSA2"
+    },
+    {
+        "source": "AdHoc",
+        "target": "CSA3"
+    },
+    {
+        "source": "CC",
+        "target": "CSA3"
+    },
+    {
+        "source": "TNSM",
+        "target": "CSA3"
+    },
+    {
+        "source": "IETCOM",
+        "target": "CSA4"
+    },
+    {
+        "source": "JNCA",
+        "target": "CSA3"
+    },
+    {
+        "source": "MONET",
+        "target": "CSA3"
+    },
+    {
+        "source": "Net",
+        "target": "CSA4"
+    },
+    {
+        "source": "PPNA",
+        "target": "CSA4"
+    },
+    {
+        "source": "WCMC",
+        "target": "CSA4"
+    },
+    {
+        "source": "WN",
+        "target": "CSA4"
+    }
+]

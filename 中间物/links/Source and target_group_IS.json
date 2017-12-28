@@ -1,0 +1,130 @@
+[
+    {
+        "source": "TDSC",
+        "target": "CCFA"
+    },
+    {
+        "source": "TIFS",
+        "target": "CCFA"
+    },
+    {
+        "source": "JoC",
+        "target": "CCFA"
+    },
+    {
+        "source": "TISSEC",
+        "target": "CCFB"
+    },
+    {
+        "source": "C&S",
+        "target": "CCFB"
+    },
+    {
+        "source": "DCC",
+        "target": "CCFB"
+    },
+    {
+        "source": "JCS",
+        "target": "CCFB"
+    },
+    {
+        "source": "CLSR",
+        "target": "CCFC"
+    },
+    {
+        "source": "EJIS",
+        "target": "CCFC"
+    },
+    {
+        "source": "IETIS",
+        "target": "CCFC"
+    },
+    {
+        "source": "IMCS",
+        "target": "CCFC"
+    },
+    {
+        "source": "ISTR",
+        "target": "CCFC"
+    },
+    {
+        "source": "IJISP",
+        "target": "CCFC"
+    },
+    {
+        "source": "IJICS",
+        "target": "CCFC"
+    },
+    {
+        "source": "SCN",
+        "target": "CCFC"
+    },
+    {
+        "source": "IJIS2",
+        "target": "CCFD"
+    },
+    {
+        "source": "TDSC",
+        "target": "CSA3"
+    },
+    {
+        "source": "TIFS",
+        "target": "CSA2"
+    },
+    {
+        "source": "JoC",
+        "target": "CSA4"
+    },
+    {
+        "source": "TISSEC",
+        "target": "CSA4"
+    },
+    {
+        "source": "C&S",
+        "target": "CSA3"
+    },
+    {
+        "source": "DCC",
+        "target": "CSA4"
+    },
+    {
+        "source": "JCS",
+        "target": "CSA5"
+    },
+    {
+        "source": "CLSR",
+        "target": "CSA5"
+    },
+    {
+        "source": "EJIS",
+        "target": "CSA5"
+    },
+    {
+        "source": "IETIS",
+        "target": "CSA4"
+    },
+    {
+        "source": "IMCS",
+        "target": "CSA5"
+    },
+    {
+        "source": "ISTR",
+        "target": "CSA5"
+    },
+    {
+        "source": "IJISP",
+        "target": "CSA5"
+    },
+    {
+        "source": "IJICS",
+        "target": "CSA5"
+    },
+    {
+        "source": "SCN",
+        "target": "CSA4"
+    },
+    {
+        "source": "IJIS2",
+        "target": "CSA4"
+    }
+]

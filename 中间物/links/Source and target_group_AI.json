@@ -1,0 +1,490 @@
+[
+    {
+        "source": "AI2",
+        "target": "CCFA"
+    },
+    {
+        "source": "TPAMI",
+        "target": "CCFA"
+    },
+    {
+        "source": "IJCV",
+        "target": "CCFA"
+    },
+    {
+        "source": "JMLR",
+        "target": "CCFA"
+    },
+    {
+        "source": "TAP",
+        "target": "CCFB"
+    },
+    {
+        "source": "TSLP",
+        "target": "CCFB"
+    },
+    {
+        "source": "CL",
+        "target": "CCFB"
+    },
+    {
+        "source": "CVIU",
+        "target": "CCFB"
+    },
+    {
+        "source": "DKE",
+        "target": "CCFB"
+    },
+    {
+        "source": "EC",
+        "target": "CCFB"
+    },
+    {
+        "source": "TAC",
+        "target": "CCFB"
+    },
+    {
+        "source": "TASLP",
+        "target": "CCFB"
+    },
+    {
+        "source": "TOC2",
+        "target": "CCFB"
+    },
+    {
+        "source": "TEC",
+        "target": "CCFB"
+    },
+    {
+        "source": "TFS",
+        "target": "CCFB"
+    },
+    {
+        "source": "TNNLS",
+        "target": "CCFB"
+    },
+    {
+        "source": "IJAR",
+        "target": "CCFB"
+    },
+    {
+        "source": "JAIR",
+        "target": "CCFB"
+    },
+    {
+        "source": "JAR",
+        "target": "CCFB"
+    },
+    {
+        "source": "JSLHR",
+        "target": "CCFB"
+    },
+    {
+        "source": "ML",
+        "target": "CCFB"
+    },
+    {
+        "source": "NC2",
+        "target": "CCFB"
+    },
+    {
+        "source": "NN",
+        "target": "CCFB"
+    },
+    {
+        "source": "PR",
+        "target": "CCFB"
+    },
+    {
+        "source": "AAMAS",
+        "target": "CCFB"
+    },
+    {
+        "source": "TALIP",
+        "target": "CCFC"
+    },
+    {
+        "source": "AI",
+        "target": "CCFC"
+    },
+    {
+        "source": "AIM",
+        "target": "CCFC"
+    },
+    {
+        "source": "AL",
+        "target": "CCFC"
+    },
+    {
+        "source": "CI",
+        "target": "CCFC"
+    },
+    {
+        "source": "CSL",
+        "target": "CCFC"
+    },
+    {
+        "source": "CS",
+        "target": "CCFC"
+    },
+    {
+        "source": "DSS",
+        "target": "CCFC"
+    },
+    {
+        "source": "EAAI",
+        "target": "CCFC"
+    },
+    {
+        "source": "ES",
+        "target": "CCFC"
+    },
+    {
+        "source": "ESWA",
+        "target": "CCFC"
+    },
+    {
+        "source": "FSS",
+        "target": "CCFC"
+    },
+    {
+        "source": "T-CIAIG",
+        "target": "CCFC"
+    },
+    {
+        "source": "IET-CVI",
+        "target": "CCFC"
+    },
+    {
+        "source": "IETSP",
+        "target": "CCFC"
+    },
+    {
+        "source": "IVC",
+        "target": "CCFC"
+    },
+    {
+        "source": "IDA",
+        "target": "CCFC"
+    },
+    {
+        "source": "IJCIA",
+        "target": "CCFC"
+    },
+    {
+        "source": "IJDAR",
+        "target": "CCFC"
+    },
+    {
+        "source": "IJIS",
+        "target": "CCFC"
+    },
+    {
+        "source": "IJNS",
+        "target": "CCFC"
+    },
+    {
+        "source": "IJPRAI",
+        "target": "CCFC"
+    },
+    {
+        "source": "IJUFKBS",
+        "target": "CCFC"
+    },
+    {
+        "source": "JETAI",
+        "target": "CCFC"
+    },
+    {
+        "source": "KBS",
+        "target": "CCFC"
+    },
+    {
+        "source": "MT",
+        "target": "CCFC"
+    },
+    {
+        "source": "MVS",
+        "target": "CCFC"
+    },
+    {
+        "source": "NC",
+        "target": "CCFC"
+    },
+    {
+        "source": "NLE",
+        "target": "CCFC"
+    },
+    {
+        "source": "NCA",
+        "target": "CCFC"
+    },
+    {
+        "source": "NPL",
+        "target": "CCFC"
+    },
+    {
+        "source": "NeuroCom",
+        "target": "CCFC"
+    },
+    {
+        "source": "PAA",
+        "target": "CCFC"
+    },
+    {
+        "source": "PRL",
+        "target": "CCFC"
+    },
+    {
+        "source": "SoftCom",
+        "target": "CCFC"
+    },
+    {
+        "source": "WIAS",
+        "target": "CCFC"
+    },
+    {
+        "source": "AI2",
+        "target": "CSA2"
+    },
+    {
+        "source": "TPAMI",
+        "target": "CSA1"
+    },
+    {
+        "source": "IJCV",
+        "target": "CSA2"
+    },
+    {
+        "source": "JMLR",
+        "target": "CSA2"
+    },
+    {
+        "source": "TAP",
+        "target": "CSA4"
+    },
+    {
+        "source": "TSLP",
+        "target": "CSA2"
+    },
+    {
+        "source": "CL",
+        "target": "CSA3"
+    },
+    {
+        "source": "CVIU",
+        "target": "CSA3"
+    },
+    {
+        "source": "DKE",
+        "target": "CSA3"
+    },
+    {
+        "source": "EC",
+        "target": "CSA2"
+    },
+    {
+        "source": "TAC",
+        "target": "CSA2"
+    },
+    {
+        "source": "TASLP",
+        "target": "CSA2"
+    },
+    {
+        "source": "TOC2",
+        "target": "CSA1"
+    },
+    {
+        "source": "TEC",
+        "target": "CSA1"
+    },
+    {
+        "source": "TFS",
+        "target": "CSA1"
+    },
+    {
+        "source": "TNNLS",
+        "target": "CSA1"
+    },
+    {
+        "source": "IJAR",
+        "target": "CSA2"
+    },
+    {
+        "source": "JAIR",
+        "target": "CSA4"
+    },
+    {
+        "source": "JAR",
+        "target": "CSA4"
+    },
+    {
+        "source": "JSLHR",
+        "target": "CSA4"
+    },
+    {
+        "source": "ML",
+        "target": "CSA3"
+    },
+    {
+        "source": "NC2",
+        "target": "CSA3"
+    },
+    {
+        "source": "NN",
+        "target": "CSA2"
+    },
+    {
+        "source": "PR",
+        "target": "CSA2"
+    },
+    {
+        "source": "AAMAS",
+        "target": "CSA4"
+    },
+    {
+        "source": "TALIP",
+        "target": "CSA5"
+    },
+    {
+        "source": "AI",
+        "target": "CSA4"
+    },
+    {
+        "source": "AIM",
+        "target": "CSA3"
+    },
+    {
+        "source": "AL",
+        "target": "CSA3"
+    },
+    {
+        "source": "CI",
+        "target": "CSA4"
+    },
+    {
+        "source": "CSL",
+        "target": "CSA3"
+    },
+    {
+        "source": "CS",
+        "target": "CSA4"
+    },
+    {
+        "source": "DSS",
+        "target": "CSA2"
+    },
+    {
+        "source": "EAAI",
+        "target": "CSA2"
+    },
+    {
+        "source": "ES",
+        "target": "CSA4"
+    },
+    {
+        "source": "ESWA",
+        "target": "CSA2"
+    },
+    {
+        "source": "FSS",
+        "target": "CSA2"
+    },
+    {
+        "source": "T-CIAIG",
+        "target": "CSA4"
+    },
+    {
+        "source": "IET-CVI",
+        "target": "CSA4"
+    },
+    {
+        "source": "IETSP",
+        "target": "CSA4"
+    },
+    {
+        "source": "IVC",
+        "target": "CSA3"
+    },
+    {
+        "source": "IDA",
+        "target": "CSA4"
+    },
+    {
+        "source": "IJCIA",
+        "target": "CSA5"
+    },
+    {
+        "source": "IJDAR",
+        "target": "CSA4"
+    },
+    {
+        "source": "IJIS",
+        "target": "CSA3"
+    },
+    {
+        "source": "IJNS",
+        "target": "CSA1"
+    },
+    {
+        "source": "IJPRAI",
+        "target": "CSA4"
+    },
+    {
+        "source": "IJUFKBS",
+        "target": "CSA4"
+    },
+    {
+        "source": "JETAI",
+        "target": "CSA4"
+    },
+    {
+        "source": "KBS",
+        "target": "CSA2"
+    },
+    {
+        "source": "MT",
+        "target": "CSA5"
+    },
+    {
+        "source": "MVS",
+        "target": "CSA3"
+    },
+    {
+        "source": "NC",
+        "target": "CSA4"
+    },
+    {
+        "source": "NLE",
+        "target": "CSA4"
+    },
+    {
+        "source": "NCA",
+        "target": "CSA3"
+    },
+    {
+        "source": "NPL",
+        "target": "CSA3"
+    },
+    {
+        "source": "NeuroCom",
+        "target": "CSA2"
+    },
+    {
+        "source": "PAA",
+        "target": "CSA4"
+    },
+    {
+        "source": "PRL",
+        "target": "CSA3"
+    },
+    {
+        "source": "SoftCom",
+        "target": "CSA3"
+    },
+    {
+        "source": "WIAS",
+        "target": "CSA5"
+    }
+]
