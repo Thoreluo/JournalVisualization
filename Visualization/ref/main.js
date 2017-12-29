@@ -307,7 +307,7 @@ var graph_CA = {
             "id": "TOCS",
             "name": "TOCS",
             "fullName": "ACM Transactions on Computer Systems",
-            "Press": "ACM1",
+            "Press": "ACM",
             "DBLP": "http://dblp.uni-trier.de/db/journals/tocs/",
             "CCF": "A",
             "CSA": 4,
@@ -5981,205 +5981,8 @@ var graph_Others = {
     ]
 };
 
-option_graph = {
-    title: {
-        text: '期刊详细信息',
-        top: 0,
-        x: '45%',
-        textStyle: {
-            color: '#2d2d2d',
-            fontStyle: 'normal',
-            fontWeight: 'lighter'
-        },
-    },
-    tooltip: {
-        formatter: function (params) {
-            if (params.dataType == 'node')
-                return;
-            else if (params.dataType == 'edge')
-                return '期刊' + params.data.source + ', 位于' + params.data.target + '区';
-        }
-    },
-    /*legend: {
-        data:['计算机体系结构','计算机网络']
-    },*/
-    animationEasingUpdate: 'quinticInOut',
-    legend: {
-        show: true,
-        //type: 'scroll',
-        orient: 'vertical',
-        /**图例的位置**/
-        left: 0,
-        top: 10,
-        /*************/
-        data: [
-            '期刊', 'CCF A区', 'CCF B区', 'CCF C区', 'CCF暂未收录',
-            'CSA 1区', 'CSA 2区', 'CSA 3区', 'CSA 4区', 'CSA暂未收录'
-        ]
-    },
-    /*color: ['rgb(3,54,73)', 'rgb(128,143,128)', 'rgb(93,172,129)', 'rgb(168,216,185)', 'rgb(145,180,147)',
-        'rgb(225,159,180)', 'rgb(225,107,140)', 'rgb(202,173,95)', 'rgb(191,103,102)', 'rgb(134,71,63)'],*/
-    color: ['rgb(148, 161, 169)', 'rgb(168,216,185)', 'rgb(181,202,160)', 'rgb(134,193,102)', 'rgb(93,172,129)',
-        'rgb(100,54,60)', 'rgb(134,71,63)', 'rgb(191,103,102)', 'rgb(225,107,140)', 'rgb(225,159,180)'],
-    series: [
-        {
-            left: 75,
-            top: 90,
-            bottom: 70,
-            name: '',
-            type: 'graph',
-            layout: 'circular',
-            //roam: true,
-            //focusNodeAdjacency: true,
-            nodes: graph.nodes,
-            links: graph.links,
-            categories: graph.categories,
-            focusNodeAdjacency: true,
-            lineStyle: {
-                normal: {
-                    color: 'target',
-                    curveness: 0.3,
-                    width: 1
-                }
-            },
-            label: {
-                normal: {
-                    show: true,
-                    position: 'right',
-                    fontSize: 12,
-                    distance: 5
-                    //formatter: '{b}'
-                }
-            },
-            circular: {
-                rotateLabel: true
-            },
-        },
-    ]
-};
 
-//绘制初始图表
-myGraph.hideLoading();
-myGraph.setOption(option_graph);
-
-//下拉框发生改变，重新绘制
-function selectChange() {
-    myGraph.showLoading();
-    var obj = document.getElementById('select');
-    var index = obj.selectedIndex;
-    var option = myGraph.getOption();
-    var nodes = graph.nodes.slice(0);
-    var links = graph.links.slice(0);
-    var new_nodes = null, new_links = null;
-
-    //console.log(index);
-
-    //判断选择的是哪种CCF类型
-    switch (index) {
-        case 0:
-            break;
-        case 1:
-            new_nodes = graph_CA.nodes;
-            new_links = graph_CA.links;
-            break;
-        case 2:
-            new_nodes = graph_CN.nodes;
-            new_links = graph_CN.links;
-            break;
-        case 3:
-            new_nodes = graph_IS.nodes;
-            new_links = graph_IS.links;
-            break;
-        case 4:
-            new_nodes = graph_SE.nodes;
-            new_links = graph_SE.links;
-            break;
-        case 5:
-            new_nodes = graph_DB.nodes;
-            new_links = graph_DB.links;
-            break;
-        case 6:
-            new_nodes = graph_CST.nodes;
-            new_links = graph_CST.links;
-            break;
-        case 7:
-            new_nodes = graph_CG.nodes;
-            new_links = graph_CG.links;
-            break;
-        case 8:
-            new_nodes = graph_AI.nodes;
-            new_links = graph_AI.links;
-            break;
-        case 9:
-            new_nodes = graph_HCI.nodes;
-            new_links = graph_HCI.links;
-            break;
-        case 10:
-            new_nodes = graph_Others.nodes;
-            new_links = graph_Others.links;
-            break;
-    }
-
-    //处理数据，准备重绘
-    if (new_links == null || new_nodes == null) {/*什么都不做*/ }
-    else {
-        new_nodes.forEach(function (node) {
-            node.symbolSize = node.IF_2015 * 8 + 5;
-            //node.symbolSize = 5 * Math.pow(2, node.IF_2015);
-            /*node.label = {
-                normal: {
-                    show: node.symbolSize > 6
-                }
-            };*/
-            nodes.push(node);
-        });
-        new_links.forEach(function (link) {
-            links.push(link);
-        });
-    }
-
-    //重绘
-    option.series[0].nodes = nodes;
-    option.series[0].links = links;
-    myGraph.hideLoading();
-    myGraph.setOption(option);
-}
-
-//点击期刊节点时
-myGraph.on('contextmenu', function (params) {
-    //如果点击的是边，返回
-    if (params.dataType == 'edge')
-        return;
-
-    //如果不是点击期刊节点,返回
-    if (params.data.category != 0)
-        return;
-
-    var details = params.data;
-    var abbreviation = document.getElementById("abbreviation");
-    var fullname = document.getElementById("fullname");
-    var press = document.getElementById("press");
-    var dblp = document.getElementById("dblp");
-    abbreviation.innerHTML = details.name;
-    fullname.innerHTML = details.fullName;
-    dblp.href = details.DBLP;
-    press.title = '出版社：' + details.Press;
-    press.src = 'ref/logos/' + details.Press + '.png';
-});
-
-function NoImage() {
-    var press = document.getElementById("press");
-    press.title += '，但我们无法找到该出版社logo';
-    press.src = 'ref/logos/404.png';
-}
-
-
-/*Line******************************************************************************/
-//initialize the chart to be displayed
-var myLine = echarts.init(document.getElementById("line"), null, {renderer: 'svg'});
-myLine.showLoading();
-
-/*用于绘制折线图的数据*/
+/*用于绘制折线图的数据*///也用于绘制单轴散点
 var line_CA = [
     {
         "id": "TOCS",
@@ -10740,9 +10543,10 @@ var line_Other = [
     },
 ];
 
-option_line = {
+
+option_graph = {
     title: {
-        text: '影响因子变化图',
+        text: '期刊详细信息',
         top: 0,
         x: '45%',
         textStyle: {
@@ -10751,8 +10555,313 @@ option_line = {
             fontWeight: 'lighter'
         },
     },
+    tooltip: {
+        formatter: function (params) {
+            if (params.dataType == 'node')
+                return;
+            else if (params.dataType == 'edge')
+                return '期刊' + params.data.source + ', 位于' + params.data.target + '区';
+        }
+    },
+    /*legend: {
+        data:['计算机体系结构','计算机网络']
+    },*/
+    animationEasingUpdate: 'quinticInOut',
+    legend: {
+        show: true,
+        //type: 'scroll',
+        orient: 'vertical',
+        /**图例的位置**/
+        left: 0,
+        top: 10,
+        /*************/
+        data: [
+            '期刊', 'CCF A区', 'CCF B区', 'CCF C区', 'CCF暂未收录',
+            'CSA 1区', 'CSA 2区', 'CSA 3区', 'CSA 4区', 'CSA暂未收录'
+        ]
+    },
+    /*color: ['rgb(3,54,73)', 'rgb(128,143,128)', 'rgb(93,172,129)', 'rgb(168,216,185)', 'rgb(145,180,147)',
+        'rgb(225,159,180)', 'rgb(225,107,140)', 'rgb(202,173,95)', 'rgb(191,103,102)', 'rgb(134,71,63)'],*/
+    color: ['rgb(148, 161, 169)', 'rgb(168,216,185)', 'rgb(181,202,160)', 'rgb(134,193,102)', 'rgb(93,172,129)',
+        'rgb(100,54,60)', 'rgb(134,71,63)', 'rgb(191,103,102)', 'rgb(225,107,140)', 'rgb(225,159,180)'],
+    series: [
+        {
+            left: 75,
+            top: 90,
+            bottom: 70,
+            name: '',
+            type: 'graph',
+            layout: 'circular',
+            //roam: true,
+            //focusNodeAdjacency: true,
+            nodes: graph.nodes,
+            links: graph.links,
+            categories: graph.categories,
+            focusNodeAdjacency: true,
+            lineStyle: {
+                normal: {
+                    color: 'target',
+                    curveness: 0.3,
+                    width: 1
+                }
+            },
+            label: {
+                normal: {
+                    show: true,
+                    position: 'right',
+                    fontSize: 12,
+                    distance: 5
+                    //formatter: '{b}'
+                }
+            },
+            circular: {
+                rotateLabel: true
+            },
+        },
+    ]
+};
+
+//绘制初始图表
+myGraph.hideLoading();
+myGraph.setOption(option_graph);
+
+//下拉框发生改变，重新绘制
+function selectChange() {
+    myGraph.showLoading();
+    var obj = document.getElementById('select');
+    var index = obj.selectedIndex;
+    var option = myGraph.getOption();
+    var nodes = graph.nodes.slice(0);
+    var links = graph.links.slice(0);
+    var new_nodes = null, new_links = null;
+
+    //console.log(index);
+
+    //判断选择的是哪种CCF类型
+    switch (index) {
+        case 0:
+            break;
+        case 1:
+            new_nodes = graph_CA.nodes;
+            new_links = graph_CA.links;
+            break;
+        case 2:
+            new_nodes = graph_CN.nodes;
+            new_links = graph_CN.links;
+            break;
+        case 3:
+            new_nodes = graph_IS.nodes;
+            new_links = graph_IS.links;
+            break;
+        case 4:
+            new_nodes = graph_SE.nodes;
+            new_links = graph_SE.links;
+            break;
+        case 5:
+            new_nodes = graph_DB.nodes;
+            new_links = graph_DB.links;
+            break;
+        case 6:
+            new_nodes = graph_CST.nodes;
+            new_links = graph_CST.links;
+            break;
+        case 7:
+            new_nodes = graph_CG.nodes;
+            new_links = graph_CG.links;
+            break;
+        case 8:
+            new_nodes = graph_AI.nodes;
+            new_links = graph_AI.links;
+            break;
+        case 9:
+            new_nodes = graph_HCI.nodes;
+            new_links = graph_HCI.links;
+            break;
+        case 10:
+            new_nodes = graph_Others.nodes;
+            new_links = graph_Others.links;
+            break;
+    }
+
+    //处理数据，准备重绘
+    if (new_links == null || new_nodes == null) {/*什么都不做*/ }
+    else {
+        new_nodes.forEach(function (node) {
+            node.symbolSize = node.IF_2015 * 8 + 5;
+            //node.symbolSize = 5 * Math.pow(2, node.IF_2015);
+            /*node.label = {
+                normal: {
+                    show: node.symbolSize > 6
+                }
+            };*/
+            nodes.push(node);
+        });
+        new_links.forEach(function (link) {
+            links.push(link);
+        });
+    }
+
+    //重绘
+    option.series[0].nodes = nodes;
+    option.series[0].links = links;
+    myGraph.hideLoading();
+    myGraph.setOption(option);
+}
+
+
+/*Line******************************************************************************/
+//initialize the chart to be displayed
+var myScatter = echarts.init(document.getElementById("scatter")/*, null, { renderer: 'svg' }*/);
+
+var option_scatter = {
+    title: {
+        text: 'IF变化',
+        textStyle: {
+            color: '#7D7D7D',
+            fontWeight: 'lighter'
+        },
+        left: '42%'
+    },
+    tooltip: {
+        show: true
+    },
+    singleAxis: [
+        {
+            type: 'category',
+            data: ['2005', '2006', '2007', '2008', '2009', '2010',
+                '2011', '2012', '2013', '2014', '2015', '2016'],
+            //scale:true
+            axisLabel: {
+                interval: 2
+            },
+            top: '30px',
+            bottom: '11px',
+        }
+    ],
+    series: [
+        {
+            type: 'scatter',
+            coordinateSystem: 'singleAxis',
+            symbolSize: function (val) {
+                return Math.min(val[1] * 10, 100);
+            },
+            itemStyle: {
+                normal: {
+                    color: 'rgb(148, 161, 169)'
+                }
+            },
+            /*data: (function () {
+                var d = [];
+                var len = 10000;
+                var x = 0;
+                while (len--) {
+                    x = (Math.random() * 10).toFixed(3) - 0;
+                    d.push([
+                        x,
+                        //Math.random() * 10
+                        (Math.sin(x) - x * (len % 2 ? 0.1 : -0.1) * Math.random()).toFixed(3) - 0
+                    ]);
+                }
+                //console.log(d)
+                return d;
+            })()*/
+            data: [
+                ['2005', 2.045],
+                ['2006', 1.409],
+                ['2007', 1.917],
+                ['2008', 2.391],
+                ['2009', 2.381],
+                ['2010', 1.889],
+                ['2011', 1.188],
+                ['2012', 0.8],
+                ['2013', 0.615],
+                ['2014', 0.6],
+                ['2015', 1.6],
+                ['2016', 5.045]
+            ]
+        }
+    ]
+};
+
+myScatter.setOption(option_scatter);
+
+
+//点击期刊节点时
+myGraph.on('contextmenu', function (params) {
+    //如果点击的是边，返回
+    if (params.dataType == 'edge')
+        return;
+
+    //如果不是点击期刊节点,返回
+    if (params.data.category != 0)
+        return;
+
+    var details = params.data;
+    var abbreviation = document.getElementById("abbreviation");
+    var fullname = document.getElementById("fullname");
+    var press = document.getElementById("press");
+    var dblp = document.getElementById("dblp");
+    abbreviation.innerHTML = details.name;
+    fullname.innerHTML = details.fullName;
+    dblp.href = details.DBLP;
+    press.title = '出版社：' + details.Press;
+    press.src = 'ref/logos/' + details.Press + '.png';
+
+    //重绘单轴散点
+    var field, data;
+    switch (details.field) {
+        case 'CA': field = line_CA; break;
+        case 'CN': field = line_CN; break;
+        case 'IS': field = line_IS; break;
+        case 'SE': field = line_SE; break;
+        case 'DB': field = line_DB; break;
+        case 'CST': field = line_CST; break;
+        case 'CG': field = line_CG; break;
+        case 'AI': field = line_AI; break;
+        case 'HCI': field = line_HCI; break;
+        case 'Other': field = line_Other; break;
+    }
+    //console.log(filed);
+    if (field != null) {
+        field.forEach(function (line) {
+            if (line.id == details.id)
+                data = line.data;
+        });
+    }
+    //console.log(data);
+    option_scatter.series[0].data = [];
+    for (var i = 0; i < 12; i++) {
+        option_scatter.series[0].data.push([(2005 + i).toString(), data[i]]);
+    }
+    console.log(option_scatter);
+    myScatter.setOption(option_scatter, true);
+});
+
+function NoImage() {
+    var press = document.getElementById("press");
+    press.title += '，但我们无法找到该出版社logo';
+    press.src = 'ref/logos/404.png';
+}
+
+
+/*Line******************************************************************************/
+//initialize the chart to be displayed
+var myLine = echarts.init(document.getElementById("line"), null, { renderer: 'svg' });
+myLine.showLoading();
+
+option_line = {
+    title: {
+        text: '影响因子变化图',
+        top: 0,
+        x: '43%',
+        textStyle: {
+            color: '#2d2d2d',
+            fontStyle: 'normal',
+            fontWeight: 'lighter'
+        },
+    },
     color: ['#585a57', '#3f3f3d', '#45554b', '#507884', '#008f5a',
-            '#d15d5e', '#bb1b33', '#883040', '#847f95', '#4e211b'],
+        '#d15d5e', '#bb1b33', '#883040', '#847f95', '#4e211b'],
     //color: ['#9f9f9f'],
     animation: false,
     /*tooltip: {
@@ -10764,8 +10873,8 @@ option_line = {
     legend: {
         //type: 'scroll',
         data: ['数据库/数据挖掘/内容检索', '计算机图形学与多媒体', '人机交互与普适计算',
-               '交叉/综合/新兴', '计算机体系结构', '网络与信息安全', '计算机科学理论',
-               '计算机网络', '软件工程', '人工智能'],
+            '交叉/综合/新兴', '计算机体系结构', '网络与信息安全', '计算机科学理论',
+            '计算机网络', '软件工程', '人工智能'],
         orient: 'vertical',
         y: 'center',
         x: 'right',
@@ -10867,10 +10976,243 @@ line_Other.forEach(function (line) {
 option_line.series.forEach(function (line) {
     line.type = 'line';
     line.smooth = true;
-    line.lineStyle = { normal: { width:0.8 } };//,opacity:0.8
+    line.lineStyle = { normal: { width: 0.8 } };//,opacity:0.8
     //line.showSymbol = false;
     line.hoverAnimation = false;
 });
 
 myLine.setOption(option_line);
 myLine.hideLoading();
+
+var averageIF = [
+    {
+        type: 'line',
+        name: '计算机体系结构',
+        data: [
+            0.40556,
+            0.32308,
+            0.37844,
+            0.56112,
+            0.63368,
+            0.56596,
+            0.49644,
+            0.50236,
+            0.5148,
+            0.55412,
+            1.09556,
+            1.22188
+        ],
+        smooth: true,
+        lineStyle: { normal: { width: 0.8 } },
+        hoverAnimation: false
+    },
+    {
+        name: '计算机网络',
+        data: [
+            0.6109473684,
+            0.5028947368,
+            0.5209473684,
+            0.814,
+            1.0366315789,
+            0.9665263158,
+            0.9973157895,
+            0.9677368421,
+            1.1473157895,
+            1.1034736842,
+            1.6598421053,
+            2.2344736842
+        ],
+        type: 'line',
+        smooth: true,
+        lineStyle: { normal: { width: 0.8 } },
+        hoverAnimation: false
+    },
+    {
+        name: '网络与信息安全',
+        data: [
+            0.32225,
+            0.354375,
+            0.3006875,
+            0.4930625,
+            0.7118125,
+            0.6308125,
+            0.392,
+            0.44125,
+            0.500625,
+            0.5585625,
+            0.7455,
+            1.0915
+        ],
+        type: 'line',
+        smooth: true,
+        lineStyle: { normal: { width: 0.8 } },
+        hoverAnimation: false
+    },
+    {
+        name: '软件工程',
+        data: [
+            0.428,
+            0.39975,
+            0.4164583333,
+            0.6235833333,
+            0.764125,
+            0.615375,
+            0.4717916667,
+            0.5382916667,
+            0.5567916667,
+            0.5807083333,
+            0.9422083333,
+            1.0230416667
+        ],
+        type: 'line',
+        smooth: true,
+        lineStyle: { normal: { width: 0.8 } },
+        hoverAnimation: false
+    },
+    {
+        name: '数据库/数据挖掘/内容检索',
+        data: [
+            0.88859375,
+            0.95971875,
+            0.98615625,
+            1.246875,
+            1.37859375,
+            1.23271875,
+            1.0024375,
+            0.90378125,
+            1.07846875,
+            1.11165625,
+            1.430625,
+            1.6085
+        ],
+        type: 'line',
+        smooth: true,
+        lineStyle: { normal: { width: 0.8 } },
+        hoverAnimation: false
+    },
+    {
+        name: '计算机科学理论',
+        data: [
+            0.8184285714,
+            0.7807142857,
+            0.77025,
+            1.0262142857,
+            1.0126785714,
+            1.0176071429,
+            0.8172142857,
+            0.7437142857,
+            0.7771071429,
+            0.8363571429,
+            0.8590357143,
+            1.078
+        ],
+        type: 'line',
+        smooth: true,
+        lineStyle: { normal: { width: 0.8 } },
+        hoverAnimation: false
+    },
+    {
+        name: '计算机图形学与多媒体',
+        data: [
+            0.9084814815,
+            0.8568518519,
+            0.8413703704,
+            1.1228888889,
+            1.0465185185,
+            1.2264814815,
+            1.221962963,
+            1.1581851852,
+            1.2192222222,
+            1.307037037,
+            1.5546296296,
+            1.686037037
+        ],
+        type: 'line',
+        smooth: true,
+        lineStyle: { normal: { width: 0.8 } },
+        hoverAnimation: false
+    },
+    {
+        name: '人工智能',
+        data: [
+            0.8888360656,
+            0.8551803279,
+            0.8543770492,
+            1.2645081967,
+            1.3307868852,
+            1.2788196721,
+            1.1504590164,
+            1.3526885246,
+            1.4838360656,
+            1.619852459,
+            2.0582459016,
+            2.3808852459
+        ],
+        type: 'line',
+        smooth: true,
+        lineStyle: { normal: { width: 0.8 } },
+        hoverAnimation: false
+    },
+    {
+        name: '人机交互与普适计算',
+        data: [
+            0.2577272727,
+            0.3013636364,
+            0.3070909091,
+            0.4260909091,
+            0.7404545455,
+            0.7978181818,
+            0.6926363636,
+            0.7896363636,
+            0.7344545455,
+            1.1549090909,
+            1.7201818182,
+            1.5459090909
+        ],
+        type: 'line',
+        smooth: true,
+        lineStyle: { normal: { width: 0.8 } },
+        hoverAnimation: false
+    },
+    {
+        name: '交叉/综合/新兴',
+        data: [
+            1.4759166667,
+            2.7645833333,
+            2.03025,
+            2.2615416667,
+            2.2784583333,
+            2.4215,
+            2.369,
+            2.4324166667,
+            2.3332916667,
+            2.424875,
+            2.6476666667,
+            2.8289166667
+        ],
+        type: 'line',
+        smooth: true,
+        lineStyle: { normal: { width: 0.8 } },
+        hoverAnimation: false
+    }
+];
+
+//改变视图
+function changeLine() {
+    var button = document.getElementById("change_line");
+    if (button.innerHTML == "显示平均视图") {
+        var option = myLine.getOption();
+        myLine.showLoading();
+        option.series = averageIF;
+        option.animation = true;
+        myLine.setOption(option, true);
+        button.innerHTML = "显示详细视图";
+        myLine.hideLoading();
+    }
+    else {
+        myLine.showLoading();
+        myLine.setOption(option_line, true);
+        button.innerHTML = "显示平均视图";
+        myLine.hideLoading();
+    }
+}
