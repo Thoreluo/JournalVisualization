@@ -1,0 +1,38 @@
+﻿1. 十个对象，名称分别是paralle_CN，parallel_CA……
+//这是用于平行坐标图的
+CCF方向	编码		简写
+计算机体系结构	1		CA
+计算机网络	2		CN
+网络与信息安全	3		IS
+软件工程	4		SE
+数据库/数据挖掘/内容检索	5		DB
+计算机科学理论	6		CST
+计算机图形学与多媒体	7		CG
+人工智能	8		AI
+人机交互与普适计算	9		HCI
+交叉/综合/新兴	10		Others
+parallel_CN = [
+    ['A', '4', 1.4], //CCF分区，CSA分区，!!!2015年IF!!!
+    ...
+]
+
+2. 对象：journal_nodes
+//用于力导图和信息显示
+//如：（数据我瞎弄的）
+journal_nodes = {
+    {name:'TOCS', id:'TOCS', fullName:'ACM Transactions on Computer Systems',
+        press: 'ACM', DBLP: 'http://dblp.uni-trier.de/db/journals/tocs/', 
+        field:'CN', CCF:'B', CSA:'5',  IF_2015: 2.4, ..., category:5, symbolSize:32.75
+    },
+    ...
+}
+分别是：名称，id（和名称一样），全称，出版社名，DBLP，CCF分类，CCF分区，CSA分区，
+IF大小：几个IF（按年份排列,命名是IF12，IF13等等），category：全是0，symbolSize：35*ln(IF_2015^0.5+1)
+
+3. 对象：journal_links
+journal_links = {
+    {soruce:'TMC', target:'CCFB'},
+    {soruce:'TMC', target:'CSA5'},
+    ...
+}
+//按上面nodes的顺序填进来，source是name值，target是分区值

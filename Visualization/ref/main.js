@@ -5775,7 +5775,7 @@ var graph_Others = {
             "id": "FCS",
             "name": "FCS",
             "fullName": "Frontiers of Computer Science",
-            "Press": "Speinger",
+            "Press": "Springer",
             "DBLP": "http://dblp.uni-trier.de/db/journals/fcsc/",
             "CCF": "C",
             "CSA": 4,
